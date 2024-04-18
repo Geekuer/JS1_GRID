@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>WEB1 - HTML</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="darkmode.js"></script>
+    <style>
+        a {
+            color: #e44d26;
+        }
+
+        h1 {
+            border-bottom: 3px solid #e44d26;
+        }
+
+        #order {
+            border-right: 3px solid #e44d26;
+        }
+
+        body.dark-mode {
+            background-color: #222;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <H1><a href="index.html">WEB</a></H1>
+    </header>
+
+    <div id="grid">
+        <nav id="order">
+            <ol>
+                <li><a href="1.html">HTML</a></li>
+                <li><a href="2.html">CSS</a></li>
+                <li><a href="3.html">JavaScript</a></li>
+            </ol>
+            <button id="button" onclick="toggleDarkMode()">Night</button>
+        </nav>
+
+        <article id="article">
+            <h2>HTML</h2>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ok-plXXHlWw?si=eefliV_u4tPQhEnz"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; WEB-share"
+                    allowfullscreen></iframe>
+            </div>
+            <p>
+                <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" title="Wikipedia_HTML">Hypertext Markup
+                    Language (HTML)</a> is the standart markup Language for <strong>creating <u>web</u> pages</strong>
+                and web applications. Web browsers receive HTML dovuments from a web server or from local storage and
+                render them into multimedia web pages. HTML describes the structure of a web page semantically and
+                originally included cues for the appearance of the document. HTML elements are the building blocks of
+                HTML pages. With HTML constructs, images and other objects, such as interactive froms, may be embedded
+                into the rendered page. IT provieds a semantics for text such as headings, paragraphs, lists, links,
+                quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+            </p>
+            <img src="image/HTML.png" width="140">
+        </article>
+    </div>
+</body>
+
+</html>

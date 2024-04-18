@@ -1,0 +1,23 @@
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 70px;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+#grid #order ol {
+    width: 100px;
+    padding-left: 25px;
+}
+#button {
+    margin: 15px;
+}
+#article {
+    margin-left: 20px;
+}
