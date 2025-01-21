@@ -2,11 +2,11 @@
 function toggleDarkMode() {
 	var btn = document.getElementById("button");
 	document.body.classList.toggle("dark-mode");
-	if (btn.innerHTML === "Night") {
-		btn.innerHTML = "Day";
+	if (btn.innerHTML === "Dark") {
+		btn.innerHTML = "Light";
 		saveDarkModeState(true); // 다크 모드가 켜진 상태를 저장
 	} else {
-		btn.innerHTML = "Night";
+		btn.innerHTML = "Dark";
 		saveDarkModeState(false); // 다크 모드가 꺼진 상태를 저장
 	}
 }
@@ -30,6 +30,6 @@ window.onload = function() {
 	// 만약 다크 모드 토글 상태가 true이면 다크 모드를 적용
 	if (isDarkMode) {
 		document.body.classList.add("dark-mode");
-		document.getElementById("button").innerHTML = "Day";
+		document.getElementById("button").innerHTML = "Light";
 	}
 };
