@@ -1,68 +1,54 @@
 <!doctype html>
 <html>
-
 <head>
-    <title>WEB1 - Welcome</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <script src="darkmode.js"></script>
-    <style>
-        a {
-            color: #006db1;
-        }
-
-        h1 {
-            border-bottom: 3px solid #006db1;
-        }
-
-        #order {
-            border-right: 3px solid #006db1;
-        }
-
-        body.dark-mode {
-            background-color: #222;
-            color: #fff;
-        }
-    </style>
+	<script>
+	  if (localStorage.getItem("darkMode") === "true") {
+		 document.body.classList.add("dark-mode");
+	  }
+	</script>
+  <title>WEB1 - Welcome</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="darkmode.js" defer></script>
 </head>
 
-<body>
-    <header>
-        <H1><a href="index.html">WEB</a></H1>
-    </header>
-    
-    <div id="grid">
-        <nav id="order">
-            <ol>
-                <li><a href="1.html">HTML</a></li>
-                <li><a href="2.html">CSS</a></li>
-                <li><a href="3.html">JavaScript</a></li>
-            </ol>
-            <button id="button" onclick="toggleDarkMode()">Dark</button>
-        </nav>
+<body class="default-page">
+  <header>
+    <h1><a href="index.html">WEB</a></h1>
+  </header>
 
-        <article id="article">
-            <h2>WEB</h2>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/J8hzJxb0rpc?si=Nv7jcxNQxnqxWfH5"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; WEB-share"
-                    allowfullscreen></iframe>
-            </div>
-            <p>
-                <a href="https://en.wikipedia.org/wiki/World_Wide_WEB" target="_blank" title="Wikipedia_WEB">World Wide
-                    Web</a> (WWW or simply the Web) is an information system that enables content sharing over the
-                Internet through user-friendly ways meant to appeal to users beyond IT specialists and hobbyists. It
-                allows documents and other Web resources to be accessed over the Internet according to specific rules of
-                the Hypertext Transfer Protocol (HTTP). The WEB was invented by English computer scientist Tim
-                Berners-Lee while at CERN in 1989 and opened to the public in 199HTML It was conceived as a "universal
-                linked information system". Documents and other media content are made available to the network through
-                Web servers and can be accessed by programs such as Web browsers. Servers and resources on the World
-                Wide Web are identified and located through character strings called uniform resource locators (URLs).
-            </p>
-            <img src="image/WEB.png">
-        </article>
-    </div>
+  <div id="grid">
+    <nav id="order">
+      <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+      </ol>
+      <button id="button" onclick="toggleDarkMode()">Dark</button>
+    </nav>
+
+    <article id="article">
+      <h2>WEB</h2>
+      <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/J8hzJxb0rpc?si=Nv7jcxNQxnqxWfH5"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/World_Wide_Web" target="_blank" title="Wikipedia_WEB">
+          World Wide Web
+        </a> (WWW or simply the Web) is an information system that enables content sharing over the
+        Internet through user-friendly ways meant to appeal to users beyond IT specialists and hobbyists.
+        It allows documents and other Web resources to be accessed over the Internet according to specific rules of
+        the Hypertext Transfer Protocol (HTTP). The Web was invented by English computer scientist Tim
+        Berners-Lee while at CERN in 1989 and opened to the public in 1991. It was conceived as a "universal
+        linked information system". Documents and other media content are made available to the network through
+        Web servers and can be accessed by programs such as Web browsers. Servers and resources on the World
+        Wide Web are identified and located through character strings called uniform resource locators (URLs).
+      </p>
+      <img src="Image/WEB.png" alt="WEB Image">
+    </article>
+  </div>
 </body>
-
 </html>

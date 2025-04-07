@@ -1,23 +1,89 @@
+/* 공통 스타일 */
 a {
-    text-decoration: none;
-}
-h1 {
-    font-size: 70px;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-}
-#grid {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-}
-#grid #order ol {
-    width: 100px;
-    padding-left: 25px;
-}
-#button {
-    margin: 15px;
-}
-#article {
-    margin-left: 20px;
-}
+	text-decoration: none;
+ }
+ 
+ h1 {
+	font-size: 70px;
+	text-align: center;
+	margin: 0;
+	padding: 20px;
+	border-bottom: 3px solid;
+ }
+ 
+ #grid {
+	display: grid;
+	grid-template-columns: 150px 1fr;
+ }
+ 
+ #grid #order ol {
+	width: 100px;
+	padding-left: 25px;
+ }
+ 
+ #button {
+	margin: 15px;
+ }
+ 
+ #article {
+	margin-left: 20px;
+ }
+ 
+ /* 다크 모드 */
+ body.dark-mode {
+	background-color: #222;
+	color: #fff;
+ }
+ 
+ /* 왼쪽 메뉴와 본문 사이 구분선 */
+ #order {
+	border-right: 3px solid;
+	padding-right: 10px;
+	margin-right: 10px;
+ }
+ 
+ /* 각 페이지 테마 색상 */
+ 
+ .default-page a,
+ .default-page h1 {
+	color: #006db1;
+ }
+ .default-page h1 {
+	border-color: #006db1;
+ }
+ .default-page #order {
+	border-color: #006db1;
+ }
+ 
+ .html-page a,
+ .html-page h1 {
+	color: #e44d26;
+ }
+ .html-page h1 {
+	border-color: #e44d26;
+ }
+ .html-page #order {
+	border-color: #e44d26;
+ }
+ 
+ .css-page a,
+ .css-page h1 {
+	color: #264edf;
+ }
+ .css-page h1 {
+	border-color: #264edf;
+ }
+ .css-page #order {
+	border-color: #264edf;
+ }
+ 
+ .js-page a,
+ .js-page h1 {
+	color: #f7df1e;
+ }
+ .js-page h1 {
+	border-color: #f7df1e;
+ }
+ .js-page #order {
+	border-color: #f7df1e;
+ }
